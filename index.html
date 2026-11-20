@@ -1,0 +1,1841 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambridge International Consultants (Since 2003) | UK & Europe Visa Specialists — Rahim Yar Khan</title>
+  <meta name="description" content="Trusted Study, Visit, Work & Immigration Consultancy in Rahim Yar Khan since 2003. Check your UK & Europe visa eligibility online or book a consultation." />
+
+  <!-- Google Fonts: Playfair Display (Authoritative Serif) & Plus Jakarta Sans (Clean Modern UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            oxford: {
+              950: '#06101F',
+              900: '#0A192F',
+              800: '#112240',
+              700: '#1B3358',
+            },
+            gold: {
+              300: '#E8D090',
+              400: '#D4AF37',
+              500: '#C5A059',
+              600: '#A6833E',
+            },
+            alabaster: '#F8FAFC',
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'luxury': '0 20px 50px -15px rgba(10, 25, 47, 0.14)',
+            'gold-glow': '0 10px 30px -5px rgba(197, 160, 89, 0.35)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Custom Typography & Base Polish */
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+      color: #475569;
+      background-color: #F8FAFC;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-serif {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+
+    /* Subtle Architectural Grid & World Dot Pattern for Hero */
+    .hero-pattern {
+      background-color: #0A192F;
+      background-image:
+        radial-gradient(circle at 80% 20%, rgba(197, 160, 89, 0.16) 0%, transparent 45%),
+        radial-gradient(circle at 15% 85%, rgba(27, 51, 88, 0.65) 0%, transparent 50%),
+        linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+      background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+    }
+
+    /* Glassmorphic Sticky Navbar */
+    .nav-glass {
+      background: rgba(255, 255, 255, 0.90);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(10, 25, 47, 0.07);
+    }
+
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1), transform 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+
+    /* Subtle Floating Animation for Hero Card Accent */
+    @keyframes floatSlow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-7px); }
+    }
+    .animate-float {
+      animation: floatSlow 5.5s ease-in-out infinite;
+    }
+
+    /* Wizard Step Fade Transition */
+    @keyframes stepFadeIn {
+      from { opacity: 0; transform: translateX(12px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    .step-active {
+      animation: stepFadeIn 0.38s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    /* Interactive Option Card States */
+    .option-card {
+      transition: all 0.22s ease;
+    }
+    .option-card:hover {
+      border-color: #C5A059;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px -10px rgba(10, 25, 47, 0.12);
+    }
+    .option-card.selected {
+      border-color: #C5A059;
+      background-color: rgba(197, 160, 89, 0.08);
+      box-shadow: 0 0 0 1px #C5A059, 0 12px 24px -10px rgba(197, 160, 89, 0.25);
+    }
+
+    /* Slot Pill States */
+    .slot-pill {
+      transition: all 0.2s ease;
+    }
+    .slot-pill.selected {
+      background-color: #0A192F;
+      color: #FFFFFF;
+      border-color: #0A192F;
+      box-shadow: 0 6px 14px -4px rgba(10, 25, 47, 0.3);
+    }
+
+    /* Circular Score Meter Transition */
+    .score-ring-circle {
+      transition: stroke-dashoffset 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #F1F5F9; }
+    ::-webkit-scrollbar-thumb { background: #94A3B8; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #0A192F; }
+  </style>
+</head>
+<body class="antialiased selection:bg-gold-500/20 selection:text-oxford-900">
+
+  <!-- =========================================================
+       1. TOP UTILITY BAR
+  ========================================================== -->
+  <div class="bg-oxford-950 text-slate-300 text-xs border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2.5 flex flex-wrap items-center justify-between gap-y-2 gap-x-4">
+      <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+        <span class="inline-flex items-center gap-1.5 font-medium text-gold-300">
+          <svg class="w-3.5 h-3.5 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+          Est. 2003 &bull; 23+ Years of Trusted Guidance
+        </span>
+        <span class="hidden md:inline-flex items-center gap-1.5 text-slate-300">
+          <svg class="w-3.5 h-3.5 text-gold-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+          Farzand Road, Fazeelat Town, Rahim Yar Khan
+        </span>
+      </div>
+      <div class="flex items-center gap-4 ml-auto">
+        <span class="hidden sm:inline-flex items-center gap-1 text-amber-300 font-semibold">
+          5.0 &#9733; <span class="text-slate-300 font-normal">Google Rated</span>
+        </span>
+        <a href="tel:+923008770506" class="inline-flex items-center gap-1.5 text-white hover:text-gold-300 font-semibold transition">
+          <svg class="w-3.5 h-3.5 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          +92 300 8770506
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       2. STICKY GLASSMORPHIC NAVIGATION
+  ========================================================== -->
+  <header id="navbar" class="sticky top-0 z-40 nav-glass transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand Emblem & Wordmark -->
+        <a href="#top" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-xl bg-oxford-900 border border-gold-500/40 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform">
+            <!-- Heritage Crest SVG -->
+            <svg class="w-6 h-6 text-gold-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3L2 8l10 5 10-5-10-5z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 10.5V16c0 1.8 2.7 3.5 6 3.5s6-1.7 6-3.5v-5.5"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M22 8v6"/>
+            </svg>
+          </div>
+          <div>
+            <span class="block font-serif text-lg sm:text-xl font-bold text-oxford-900 leading-tight tracking-tight">
+              Cambridge International
+            </span>
+            <span class="block text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-600">
+              Consultants &bull; Since 2003
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-600">
+          <a href="#services" class="hover:text-oxford-900 transition">Services</a>
+          <a href="#destinations" class="hover:text-oxford-900 transition">Destinations</a>
+          <a href="#eligibility" class="hover:text-oxford-900 transition">Eligibility Check</a>
+          <a href="#booking" class="hover:text-oxford-900 transition">Book Consultation</a>
+          <a href="#contact" class="hover:text-oxford-900 transition">Contact</a>
+        </nav>
+
+        <!-- Primary CTA + Mobile Toggle -->
+        <div class="flex items-center gap-3">
+          <a href="#eligibility" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-oxford-950 font-semibold text-sm shadow-gold-glow hover:brightness-105 active:scale-[0.98] transition">
+            Free Assessment
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <button id="mobileMenuBtn" type="button" aria-label="Toggle Menu" class="lg:hidden p-2.5 rounded-xl border border-slate-200 text-oxford-900 hover:bg-slate-100 transition">
+            <svg id="menuIconOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+            <svg id="menuIconClose" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-slate-200 px-4 pt-3 pb-6 space-y-2 shadow-xl">
+      <a href="#services" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-oxford-900">Services</a>
+      <a href="#destinations" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-oxford-900">Destinations</a>
+      <a href="#eligibility" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-oxford-900">Online Eligibility Check</a>
+      <a href="#booking" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-oxford-900">Book Consultation</a>
+      <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-oxford-900">Contact & Office</a>
+      <div class="pt-2">
+        <a href="#eligibility" class="mobile-link block w-full text-center px-5 py-3 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-oxford-950 font-semibold text-sm shadow-md">
+          Start Free Eligibility Assessment
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================
+       3. EXECUTIVE HERO SECTION
+  ========================================================== -->
+  <section id="top" class="relative hero-pattern text-white overflow-hidden pt-16 pb-20 lg:pt-24 lg:pb-28">
+    <!-- Subtle Decorative World Map Watermark SVG -->
+    <svg class="absolute -right-24 top-10 w-[680px] h-[680px] text-white/[0.03] pointer-events-none select-none" viewBox="0 0 200 200" fill="currentColor">
+      <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="0.6" stroke-dasharray="3 3"/>
+      <circle cx="100" cy="100" r="70" fill="none" stroke="currentColor" stroke-width="0.6"/>
+      <circle cx="100" cy="100" r="45" fill="none" stroke="currentColor" stroke-width="0.6" stroke-dasharray="2 4"/>
+      <ellipse cx="100" cy="100" rx="95" ry="38" fill="none" stroke="currentColor" stroke-width="0.5"/>
+      <ellipse cx="100" cy="100" rx="38" ry="95" fill="none" stroke="currentColor" stroke-width="0.5"/>
+    </svg>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+        <!-- Left Column: Executive Messaging -->
+        <div class="lg:col-span-7 space-y-7">
+          <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/10 border border-gold-400/30 backdrop-blur-sm">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span class="text-xs sm:text-sm font-medium text-gold-300 tracking-wide">
+              Serving Rahim Yar Khan Since 2003 &bull; 5.0 &#9733; Rated
+            </span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-[54px] font-bold leading-[1.12] tracking-tight text-white">
+            Your Trusted Pathway to <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-300 via-gold-400 to-gold-500">UK &amp; European</span> Universities, Careers, and Global Travel.
+          </h1>
+
+          <p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+            With over <strong class="text-white font-semibold">23+ years of dedicated consultancy excellence</strong>, Cambridge International Consultants guides students, skilled professionals, and families through transparent Study, Work, Visit, and Immigration visa applications.
+          </p>
+
+          <!-- Hero CTA Buttons -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a href="#eligibility" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-oxford-950 font-bold text-sm sm:text-base shadow-gold-glow hover:brightness-105 active:scale-[0.98] transition">
+              Check Your Eligibility
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            </a>
+            <a href="#booking" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-white/10 border border-white/20 text-white font-semibold text-sm sm:text-base hover:bg-white/15 backdrop-blur-sm transition">
+              Book Consultation
+              <svg class="w-5 h-5 text-gold-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"/></svg>
+            </a>
+          </div>
+
+          <!-- Subtle Trust Strip -->
+          <div class="pt-4 flex flex-wrap items-center gap-x-8 gap-y-3 text-xs sm:text-sm text-slate-300 border-t border-white/10">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              UK &amp; Schengen Specialists
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              Zero Hidden Charges
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd"/></svg>
+              End-to-End File Preparation
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Interactive Executive Showcase Card -->
+        <div class="lg:col-span-5">
+          <div class="relative bg-oxford-800/80 border border-white/15 rounded-3xl p-6 sm:p-8 backdrop-blur-md shadow-2xl">
+            <!-- Floating Heritage Seal -->
+            <div class="animate-float absolute -top-5 -right-3 sm:-right-5 bg-gradient-to-br from-gold-400 to-gold-600 text-oxford-950 px-4 py-2 rounded-2xl shadow-lg font-bold text-xs tracking-wide flex items-center gap-1.5">
+              <span>&#9733; 5.0</span>
+              <span class="opacity-80 font-semibold">Client Satisfaction</span>
+            </div>
+
+            <div class="flex items-center justify-between pb-5 border-b border-white/10">
+              <div>
+                <p class="text-xs uppercase tracking-widest text-gold-400 font-semibold">Instant Digital Portal</p>
+                <h2 class="font-serif text-xl sm:text-2xl font-bold text-white mt-0.5">Quick-Start Visa Check</h2>
+              </div>
+              <div class="w-11 h-11 rounded-2xl bg-gold-500/15 border border-gold-400/30 flex items-center justify-center text-gold-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/></svg>
+              </div>
+            </div>
+
+            <!-- 3 Key Trust Metrics -->
+            <div class="grid grid-cols-3 gap-3 my-6">
+              <div class="bg-oxford-900/80 border border-white/10 rounded-2xl p-3.5 text-center">
+                <p class="font-serif text-xl sm:text-2xl font-bold text-gold-400">23+</p>
+                <p class="text-[11px] text-slate-300 mt-0.5 leading-tight">Years Legacy<br/>(Since 2003)</p>
+              </div>
+              <div class="bg-oxford-900/80 border border-white/10 rounded-2xl p-3.5 text-center">
+                <p class="font-serif text-xl sm:text-2xl font-bold text-white">5.0 &#9733;</p>
+                <p class="text-[11px] text-slate-300 mt-0.5 leading-tight">Verified<br/>Google Rating</p>
+              </div>
+              <div class="bg-oxford-900/80 border border-white/10 rounded-2xl p-3.5 text-center">
+                <p class="font-serif text-xl sm:text-2xl font-bold text-gold-400">UK/EU</p>
+                <p class="text-[11px] text-slate-300 mt-0.5 leading-tight">Dedicated<br/>Specialists</p>
+              </div>
+            </div>
+
+            <!-- Interactive Quick-Jump Visa Category Buttons -->
+            <p class="text-xs font-medium text-slate-300 mb-3">Select your goal to launch instant assessment:</p>
+            <div class="grid grid-cols-2 gap-2.5">
+              <button type="button" onclick="quickStartAssessment('Study Visa')" class="flex items-center justify-between px-3.5 py-3 rounded-xl bg-white/5 hover:bg-gold-500/20 border border-white/10 hover:border-gold-400/50 text-left text-sm font-medium text-white transition group">
+                <span>&#127891; Study Visa</span>
+                <span class="text-gold-400 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+              </button>
+              <button type="button" onclick="quickStartAssessment('Work Visa')" class="flex items-center justify-between px-3.5 py-3 rounded-xl bg-white/5 hover:bg-gold-500/20 border border-white/10 hover:border-gold-400/50 text-left text-sm font-medium text-white transition group">
+                <span>&#128188; Work Visa</span>
+                <span class="text-gold-400 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+              </button>
+              <button type="button" onclick="quickStartAssessment('Visit / Tourist Visa')" class="flex items-center justify-between px-3.5 py-3 rounded-xl bg-white/5 hover:bg-gold-500/20 border border-white/10 hover:border-gold-400/50 text-left text-sm font-medium text-white transition group">
+                <span>&#9992;&#65039; Visit Visa</span>
+                <span class="text-gold-400 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+              </button>
+              <button type="button" onclick="quickStartAssessment('Immigration / PR')" class="flex items-center justify-between px-3.5 py-3 rounded-xl bg-white/5 hover:bg-gold-500/20 border border-white/10 hover:border-gold-400/50 text-left text-sm font-medium text-white transition group">
+                <span>&#127757; Immigration</span>
+                <span class="text-gold-400 group-hover:translate-x-0.5 transition-transform">&rarr;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       4. PRIMARY FEATURE: INTERACTIVE 4-STEP ONLINE ELIGIBILITY ASSESSMENT PORTAL
+  ========================================================== -->
+  <section id="eligibility" class="py-20 lg:py-24 bg-alabaster relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Heading -->
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500/15 text-gold-600 font-semibold text-xs uppercase tracking-widest mb-3">
+          Online Eligibility Portal
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oxford-900">
+          Free Instant Visa Eligibility Assessment
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">
+          Answer 4 quick steps to evaluate your academic &amp; visa profile for UK and European pathways. Receive an instant tailored score and advisor recommendations.
+        </p>
+      </div>
+
+      <!-- Main Wizard Container -->
+      <div class="bg-white rounded-3xl shadow-luxury border border-slate-200/80 overflow-hidden reveal">
+
+        <!-- Wizard Header & Progress Bar -->
+        <div id="wizardProgressHeader" class="bg-oxford-900 px-6 sm:px-10 py-6 text-white">
+          <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+            <div>
+              <p id="stepLabel" class="text-xs font-semibold uppercase tracking-widest text-gold-400">Step 1 of 4</p>
+              <h3 id="stepTitle" class="font-serif text-xl sm:text-2xl font-semibold text-white mt-0.5">Select Your Visa Category</h3>
+            </div>
+            <span id="progressPercentText" class="text-sm font-bold text-gold-300 bg-white/10 px-3 py-1 rounded-full">25%</span>
+          </div>
+          <!-- Progress Bar Track -->
+          <div class="w-full h-2 bg-white/15 rounded-full overflow-hidden">
+            <div id="wizardProgressBar" class="h-full bg-gradient-to-r from-gold-500 to-gold-300 rounded-full transition-all duration-500 ease-out" style="width: 25%"></div>
+          </div>
+          <!-- Step Dots -->
+          <div class="grid grid-cols-4 gap-2 mt-3 text-[11px] text-slate-400">
+            <span id="dot-1" class="text-gold-300 font-semibold">1. Visa Type</span>
+            <span id="dot-2">2. Destination</span>
+            <span id="dot-3">3. Profile</span>
+            <span id="dot-4">4. Details</span>
+          </div>
+        </div>
+
+        <!-- Wizard Form Area -->
+        <div class="p-6 sm:p-10">
+          <!-- Inline Validation Banner -->
+          <div id="wizardError" class="hidden mb-6 px-4 py-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-sm font-medium flex items-center gap-2">
+            <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-5a.75.75 0 01.75.75v4.5a.75.75 0 01-1.5 0v-4.5A.75.75 0 0110 5zm0 10a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+            <span id="wizardErrorText">Please select an option to continue.</span>
+          </div>
+
+          <!-- STEP 1: VISA TYPE -->
+          <div id="step-1" class="wizard-step step-active">
+            <div class="grid sm:grid-cols-2 gap-4">
+              <button type="button" data-group="visaType" data-value="Study Visa" onclick="selectOption(this, 'visaType', 'Study Visa')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-oxford-900/5 text-oxford-900 flex items-center justify-center text-2xl shrink-0">&#127891;</div>
+                <div>
+                  <h4 class="font-bold text-oxford-900 text-base">Study Visa</h4>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1">Bachelors, Masters &amp; Foundation admissions in top UK &amp; European universities.</p>
+                </div>
+              </button>
+              <button type="button" data-group="visaType" data-value="Work Visa" onclick="selectOption(this, 'visaType', 'Work Visa')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-oxford-900/5 text-oxford-900 flex items-center justify-center text-2xl shrink-0">&#128188;</div>
+                <div>
+                  <h4 class="font-bold text-oxford-900 text-base">Work Visa</h4>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1">Skilled worker sponsorships, Opportunity Cards, and European employment pathways.</p>
+                </div>
+              </button>
+              <button type="button" data-group="visaType" data-value="Visit / Tourist Visa" onclick="selectOption(this, 'visaType', 'Visit / Tourist Visa')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-oxford-900/5 text-oxford-900 flex items-center justify-center text-2xl shrink-0">&#9992;&#65039;</div>
+                <div>
+                  <h4 class="font-bold text-oxford-900 text-base">Visit / Tourist Visa</h4>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1">UK Standard Visitor, Family Visit, Business &amp; Schengen tourist visas.</p>
+                </div>
+              </button>
+              <button type="button" data-group="visaType" data-value="Immigration / PR" onclick="selectOption(this, 'visaType', 'Immigration / PR')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white flex items-start gap-4">
+                <div class="w-12 h-12 rounded-xl bg-oxford-900/5 text-oxford-900 flex items-center justify-center text-2xl shrink-0">&#127757;</div>
+                <div>
+                  <h4 class="font-bold text-oxford-900 text-base">Immigration / PR</h4>
+                  <p class="text-xs sm:text-sm text-slate-500 mt-1">Long-term settlement, family reunification, and permanent residency guidance.</p>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 2: PREFERRED DESTINATION -->
+          <div id="step-2" class="wizard-step hidden">
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+              <button type="button" data-group="destination" data-value="United Kingdom" onclick="selectOption(this, 'destination', 'United Kingdom')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white">
+                <span class="text-3xl block mb-2">&#127468;&#127463;</span>
+                <h4 class="font-bold text-oxford-900">United Kingdom</h4>
+                <p class="text-xs text-slate-500 mt-0.5">2-Yr PSW &bull; Top Russell Group</p>
+              </button>
+              <button type="button" data-group="destination" data-value="Germany" onclick="selectOption(this, 'destination', 'Germany')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white">
+                <span class="text-3xl block mb-2">&#127465;&#127466;</span>
+                <h4 class="font-bold text-oxford-900">Germany</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Low/No Tuition &bull; Chancenkarte</p>
+              </button>
+              <button type="button" data-group="destination" data-value="Italy" onclick="selectOption(this, 'destination', 'Italy')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white">
+                <span class="text-3xl block mb-2">&#127470;&#127481;</span>
+                <h4 class="font-bold text-oxford-900">Italy</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Regional Scholarships &bull; High Success</p>
+              </button>
+              <button type="button" data-group="destination" data-value="Finland" onclick="selectOption(this, 'destination', 'Finland')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white">
+                <span class="text-3xl block mb-2">&#127467;&#127470;</span>
+                <h4 class="font-bold text-oxford-900">Finland</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Family Friendly &bull; Top Education</p>
+              </button>
+              <button type="button" data-group="destination" data-value="Sweden" onclick="selectOption(this, 'destination', 'Sweden')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white">
+                <span class="text-3xl block mb-2">&#127480;&#127466;</span>
+                <h4 class="font-bold text-oxford-900">Sweden</h4>
+                <p class="text-xs text-slate-500 mt-0.5">Innovation Hub &bull; Work Rights</p>
+              </button>
+              <button type="button" data-group="destination" data-value="Schengen / Other Europe" onclick="selectOption(this, 'destination', 'Schengen / Other Europe')" class="option-card text-left p-5 rounded-2xl border-2 border-slate-200 bg-white">
+                <span class="text-3xl block mb-2">&#127466;&#127482;</span>
+                <h4 class="font-bold text-oxford-900">Schengen / Europe</h4>
+                <p class="text-xs text-slate-500 mt-0.5">29 Countries &bull; Study, Work &amp; Visit</p>
+              </button>
+            </div>
+          </div>
+
+          <!-- STEP 3: ACADEMIC & PROFILE DETAILS -->
+          <div id="step-3" class="wizard-step hidden">
+            <div class="grid sm:grid-cols-2 gap-5">
+              <div>
+                <label for="elQualification" class="block text-sm font-semibold text-oxford-900 mb-2">Highest Qualification *</label>
+                <select id="elQualification" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500">
+                  <option value="">Select Qualification</option>
+                  <option value="Matric / O-Levels">Matric / O-Levels</option>
+                  <option value="Intermediate / A-Levels">Intermediate / FA / FSc / ICS / A-Levels</option>
+                  <option value="Bachelors (14/16 Years)">Bachelors (BS / BA / BCom / BBA)</option>
+                  <option value="Masters / MPhil">Masters / MPhil / Professional Degree</option>
+                </select>
+              </div>
+              <div>
+                <label for="elGrades" class="block text-sm font-semibold text-oxford-900 mb-2">Percentage or CGPA *</label>
+                <input id="elGrades" type="text" placeholder="e.g., 72% or 3.3 CGPA" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500" />
+              </div>
+              <div>
+                <label for="elEnglish" class="block text-sm font-semibold text-oxford-900 mb-2">English Language Test *</label>
+                <select id="elEnglish" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500">
+                  <option value="">Select Status</option>
+                  <option value="IELTS (6.0+ Overall)">IELTS (6.0+ Overall)</option>
+                  <option value="PTE Academic (55+)">PTE Academic (55+)</option>
+                  <option value="MOI (Medium of Instruction)">MOI (Medium of Instruction Letter)</option>
+                  <option value="Not Taken Yet">Not Taken Yet (Need Guidance)</option>
+                </select>
+              </div>
+              <div>
+                <label for="elGap" class="block text-sm font-semibold text-oxford-900 mb-2">Study / Work Gap Years *</label>
+                <select id="elGap" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500">
+                  <option value="">Select Gap</option>
+                  <option value="No Gap (Fresh)">No Gap (Fresh Graduate / Student)</option>
+                  <option value="1 - 2 Years">1 - 2 Years</option>
+                  <option value="3 - 5 Years">3 - 5 Years (With Experience)</option>
+                  <option value="5+ Years">5+ Years</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: APPLICANT DETAILS -->
+          <div id="step-4" class="wizard-step hidden">
+            <div class="grid sm:grid-cols-3 gap-5">
+              <div>
+                <label for="elName" class="block text-sm font-semibold text-oxford-900 mb-2">Full Name *</label>
+                <input id="elName" type="text" placeholder="e.g., Muhammad Usman" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500" />
+              </div>
+              <div>
+                <label for="elPhone" class="block text-sm font-semibold text-oxford-900 mb-2">WhatsApp Number *</label>
+                <input id="elPhone" type="tel" placeholder="e.g., 0300 1234567" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500" />
+              </div>
+              <div>
+                <label for="elCity" class="block text-sm font-semibold text-oxford-900 mb-2">City *</label>
+                <input id="elCity" type="text" value="Rahim Yar Khan" placeholder="e.g., Rahim Yar Khan" class="w-full px-4 py-3.5 rounded-xl border border-slate-300 bg-slate-50/50 text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500 focus:border-gold-500" />
+              </div>
+            </div>
+            <p class="mt-4 text-xs text-slate-500 flex items-center gap-1.5">
+              <svg class="w-4 h-4 text-emerald-600 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 1a4.5 4.5 0 00-4.5 4.5V9H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 00-2-2h-.5V5.5A4.5 4.5 0 0010 1zm3 8V5.5a3 3 0 10-6 0V9h6z" clip-rule="evenodd"/></svg>
+              Your details remain 100% confidential and are used solely to generate your free visa eligibility report.
+            </p>
+          </div>
+
+          <!-- RESULTS PANEL (ELIGIBILITY ASSESSMENT REPORT) -->
+          <div id="wizardResult" class="hidden step-active">
+            <div class="grid md:grid-cols-12 gap-8 items-center">
+              <!-- Score Meter Column -->
+              <div class="md:col-span-4 flex flex-col items-center justify-center bg-oxford-900 text-white rounded-3xl p-7 text-center">
+                <span class="text-[11px] uppercase tracking-widest text-gold-400 font-semibold mb-3">Profile Strength Score</span>
+                <div class="relative w-36 h-36 flex items-center justify-center">
+                  <svg class="w-36 h-36" viewBox="0 0 120 120">
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="10" />
+                    <circle id="scoreRing" class="score-ring-circle" cx="60" cy="60" r="52" fill="none" stroke="#D4AF37" stroke-width="10" stroke-linecap="round" stroke-dasharray="326.73" stroke-dashoffset="326.73" />
+                  </svg>
+                  <div class="absolute inset-0 flex flex-col items-center justify-center">
+                    <span id="scoreValueText" class="font-serif text-3xl font-bold text-white">0%</span>
+                    <span id="scoreBadge" class="text-[11px] font-semibold text-gold-300 mt-0.5">Strong Profile</span>
+                  </div>
+                </div>
+                <p id="reportApplicantSummary" class="text-xs text-slate-300 mt-4 leading-relaxed"></p>
+              </div>
+
+              <!-- Personalized Recommendations Column -->
+              <div class="md:col-span-8 space-y-5">
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 bg-emerald-50 px-3 py-1 rounded-full">
+                      &#10003; Assessment Report Ready
+                    </span>
+                    <h3 id="reportHeadline" class="font-serif text-2xl font-bold text-oxford-900 mt-2">
+                      High Eligibility for Your Target Pathway
+                    </h3>
+                  </div>
+                </div>
+
+                <!-- Recommendations List -->
+                <div id="reportRecommendations" class="space-y-3">
+                  <!-- Dynamically populated -->
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-3 pt-3">
+                  <a id="sendReportWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-md transition">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+                    Send Report to WhatsApp (+92 300 8770506)
+                  </a>
+                  <button type="button" onclick="transferToBooking()" class="inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-oxford-900 hover:bg-oxford-800 text-white font-semibold text-sm transition">
+                    Book Office Meeting
+                  </button>
+                </div>
+                <div class="pt-1">
+                  <button type="button" onclick="resetWizard()" class="text-xs font-semibold text-slate-500 hover:text-oxford-900 underline underline-offset-4 transition">
+                    &larr; Start New Eligibility Assessment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wizard Footer Controls -->
+          <div id="wizardControls" class="mt-8 pt-6 border-t border-slate-200 flex items-center justify-between gap-4">
+            <button id="prevStepBtn" type="button" onclick="changeStep(-1)" class="invisible px-5 py-3 rounded-xl border border-slate-300 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition">
+              &larr; Previous
+            </button>
+            <button id="nextStepBtn" type="button" onclick="changeStep(1)" class="ml-auto inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-oxford-900 hover:bg-oxford-800 text-white font-semibold text-sm shadow-md transition">
+              <span>Continue</span>
+              <svg class="w-4 h-4 text-gold-400" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       5. SECONDARY FEATURE: VISA CONSULTATION BOOKING PORTAL
+  ========================================================== -->
+  <section id="booking" class="py-20 lg:py-24 bg-white border-y border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+
+        <!-- Left Side: Office Info & Consultation Benefits -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-oxford-900/5 text-oxford-900 font-semibold text-xs uppercase tracking-widest">
+            Direct Appointment Portal
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oxford-900 leading-tight">
+            Book Your 1-on-1 Visa Consultation
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            Skip waiting lines. Schedule a private session with our senior visa advisors in Rahim Yar Khan — either at our Fazeelat Town office, by phone, or via WhatsApp Video.
+          </p>
+
+          <!-- Benefits List -->
+          <ul class="space-y-3.5 pt-2">
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-500/15 text-gold-600 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">&#10003;</span>
+              <span class="text-sm text-slate-700"><strong class="text-oxford-900">Profile &amp; Document Review:</strong> Honest evaluation of your academic transcripts, bank statement, or work profile.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-500/15 text-gold-600 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">&#10003;</span>
+              <span class="text-sm text-slate-700"><strong class="text-oxford-900">University &amp; Scholarship Shortlisting:</strong> Tailored options matching your budget and upcoming intakes.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="w-6 h-6 rounded-full bg-gold-500/15 text-gold-600 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">&#10003;</span>
+              <span class="text-sm text-slate-700"><strong class="text-oxford-900">Instant Confirmation Ticket:</strong> Receive a unique reference ID and WhatsApp confirmation immediately.</span>
+            </li>
+          </ul>
+
+          <!-- Office Location Badge Card -->
+          <div class="p-5 rounded-2xl bg-oxford-900 text-white border border-gold-500/30 shadow-lg">
+            <div class="flex items-start gap-3.5">
+              <div class="w-10 h-10 rounded-xl bg-gold-500/20 text-gold-400 flex items-center justify-center shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-widest text-gold-400 font-semibold">Head Office</p>
+                <p class="font-semibold text-white text-sm mt-0.5">Farzand Road, Fazeelat Town, Rahim Yar Khan</p>
+                <p class="text-xs text-slate-300 mt-1">Mon – Sat: 10:00 AM – 7:00 PM &bull; +92 300 8770506</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Interactive Booking Form -->
+        <div class="lg:col-span-7 reveal reveal-delay-1">
+          <form id="bookingForm" onsubmit="handleBookingSubmit(event)" class="bg-alabaster border border-slate-200 rounded-3xl p-6 sm:p-8 shadow-luxury space-y-6">
+            <!-- Inline Booking Error -->
+            <div id="bookingError" class="hidden px-4 py-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-sm font-medium"></div>
+
+            <!-- Mode Toggle -->
+            <div>
+              <label class="block text-sm font-semibold text-oxford-900 mb-2.5">1. Consultation Mode</label>
+              <div class="grid grid-cols-3 gap-2.5">
+                <button type="button" onclick="selectBookingMode(this, 'In-Person Office Visit')" class="mode-btn selected px-3 py-3 rounded-xl border-2 border-oxford-900 bg-oxford-900 text-white text-xs sm:text-sm font-semibold transition text-center">
+                  &#127970; Office Visit
+                </button>
+                <button type="button" onclick="selectBookingMode(this, 'Phone Call')" class="mode-btn px-3 py-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 hover:border-gold-500 text-xs sm:text-sm font-semibold transition text-center">
+                  &#128222; Phone Call
+                </button>
+                <button type="button" onclick="selectBookingMode(this, 'WhatsApp Video')" class="mode-btn px-3 py-3 rounded-xl border-2 border-slate-200 bg-white text-slate-700 hover:border-gold-500 text-xs sm:text-sm font-semibold transition text-center">
+                  &#128249; Video Call
+                </button>
+              </div>
+            </div>
+
+            <!-- Date & Service -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="bkDate" class="block text-sm font-semibold text-oxford-900 mb-2">2. Preferred Date *</label>
+                <input id="bkDate" type="date" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500" />
+              </div>
+              <div>
+                <label for="bkService" class="block text-sm font-semibold text-oxford-900 mb-2">3. Visa Service *</label>
+                <select id="bkService" required class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500">
+                  <option value="UK Study Visa">UK Study Visa</option>
+                  <option value="Europe Study Visa (Germany/Italy/Finland/Sweden)">Europe Study Visa</option>
+                  <option value="UK / Europe Work Visa">UK / Europe Work Visa</option>
+                  <option value="Visit / Tourist Visa (UK & Schengen)">Visit / Tourist Visa</option>
+                  <option value="Immigration & Family Visa">Immigration &amp; Family Visa</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Clickable Time Slot Pills -->
+            <div>
+              <label class="block text-sm font-semibold text-oxford-900 mb-2.5">4. Select Time Slot (PKT) *</label>
+              <div class="grid grid-cols-3 sm:grid-cols-6 gap-2">
+                <button type="button" onclick="selectTimeSlot(this, '10:30 AM')" class="slot-pill py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-700 hover:border-oxford-900">10:30 AM</button>
+                <button type="button" onclick="selectTimeSlot(this, '12:00 PM')" class="slot-pill selected py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-700 hover:border-oxford-900">12:00 PM</button>
+                <button type="button" onclick="selectTimeSlot(this, '2:00 PM')" class="slot-pill py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-700 hover:border-oxford-900">2:00 PM</button>
+                <button type="button" onclick="selectTimeSlot(this, '3:30 PM')" class="slot-pill py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-700 hover:border-oxford-900">3:30 PM</button>
+                <button type="button" onclick="selectTimeSlot(this, '5:00 PM')" class="slot-pill py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-700 hover:border-oxford-900">5:00 PM</button>
+                <button type="button" onclick="selectTimeSlot(this, '6:15 PM')" class="slot-pill py-2.5 px-2 rounded-xl border border-slate-300 bg-white text-xs font-semibold text-slate-700 hover:border-oxford-900">6:15 PM</button>
+              </div>
+            </div>
+
+            <!-- Name & Phone -->
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="bkName" class="block text-sm font-semibold text-oxford-900 mb-2">Your Full Name *</label>
+                <input id="bkName" type="text" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500" />
+              </div>
+              <div>
+                <label for="bkPhone" class="block text-sm font-semibold text-oxford-900 mb-2">Phone / WhatsApp *</label>
+                <input id="bkPhone" type="tel" required placeholder="0300 1234567" class="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-oxford-900 text-sm focus:outline-none focus:ring-2 focus:ring-gold-500" />
+              </div>
+            </div>
+
+            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-gold-500 to-gold-400 text-oxford-950 font-bold text-sm sm:text-base shadow-gold-glow hover:brightness-105 active:scale-[0.99] transition flex items-center justify-center gap-2">
+              Confirm Appointment &amp; Get Ticket
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/></svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       6. TOP DESTINATIONS SECTION (INTERACTIVE FILTER TABS)
+  ========================================================== -->
+  <section id="destinations" class="py-20 lg:py-24 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10 reveal">
+        <div class="max-w-2xl">
+          <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500/15 text-gold-600 font-semibold text-xs uppercase tracking-widest mb-3">
+            Global Pathways
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oxford-900">
+            Top UK &amp; European Destinations
+          </h2>
+          <p class="mt-2.5 text-slate-600 text-sm sm:text-base">
+            Explore our most sought-after study, work, and visitor visa destinations backed by 23+ years of regional case expertise.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="flex flex-wrap gap-2">
+          <button type="button" onclick="filterDestinations('all', this)" class="dest-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-oxford-900 text-white transition">All</button>
+          <button type="button" onclick="filterDestinations('uk', this)" class="dest-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-oxford-900 transition">United Kingdom</button>
+          <button type="button" onclick="filterDestinations('europe', this)" class="dest-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-oxford-900 transition">Europe Study</button>
+          <button type="button" onclick="filterDestinations('workvisit', this)" class="dest-tab px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white border border-slate-200 text-slate-700 hover:border-oxford-900 transition">Work &amp; Visit</button>
+        </div>
+      </div>
+
+      <!-- Destination Cards Grid -->
+      <div id="destinationsGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- UK Card -->
+        <article data-category="uk workvisit" class="dest-card reveal bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">&#127468;&#127463;</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-oxford-900/5 text-oxford-900">Most Popular</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-oxford-900">United Kingdom</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              World-renowned 1-year Masters, Russell Group &amp; modern universities, plus Skilled Worker &amp; Standard Visitor visas.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between"><span>Post-Study Work:</span><strong class="text-oxford-900">2 Years Graduate Route</strong></div>
+              <div class="flex justify-between"><span>Main Intakes:</span><strong class="text-oxford-900">Jan / May / Sep</strong></div>
+              <div class="flex justify-between"><span>English Option:</span><strong class="text-oxford-900">IELTS / PTE / MOI*</strong></div>
+            </div>
+          </div>
+          <button type="button" onclick="quickStartWithDestination('United Kingdom')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-100 hover:bg-oxford-900 text-oxford-900 hover:text-white font-semibold text-xs sm:text-sm transition">
+            Check UK Eligibility &rarr;
+          </button>
+        </article>
+
+        <!-- Germany Card -->
+        <article data-category="europe workvisit" class="dest-card reveal reveal-delay-1 bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">&#127465;&#127466;</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-gold-500/15 text-gold-600">Low Tuition</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-oxford-900">Germany</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Public universities with minimal tuition fees, strong engineering/IT programs, and Opportunity Card (Chancenkarte) work routes.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between"><span>Post-Study Work:</span><strong class="text-oxford-900">18 Months Job Seeker</strong></div>
+              <div class="flex justify-between"><span>Main Intakes:</span><strong class="text-oxford-900">Winter (Oct) / Summer (Apr)</strong></div>
+              <div class="flex justify-between"><span>Work Rights:</span><strong class="text-oxford-900">140 Full Days / Year</strong></div>
+            </div>
+          </div>
+          <button type="button" onclick="quickStartWithDestination('Germany')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-100 hover:bg-oxford-900 text-oxford-900 hover:text-white font-semibold text-xs sm:text-sm transition">
+            Check Germany Eligibility &rarr;
+          </button>
+        </article>
+
+        <!-- Italy Card -->
+        <article data-category="europe" class="dest-card reveal reveal-delay-2 bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">&#127470;&#127481;</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-emerald-50 text-emerald-700">Scholarships</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-oxford-900">Italy</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Affordable European degrees with generous DSU regional scholarships covering tuition, accommodation, and annual stipends.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between"><span>Scholarship Aid:</span><strong class="text-oxford-900">Up to &euro;7,000 / Year</strong></div>
+              <div class="flex justify-between"><span>Main Intake:</span><strong class="text-oxford-900">September / October</strong></div>
+              <div class="flex justify-between"><span>Schengen Access:</span><strong class="text-oxford-900">29 European Countries</strong></div>
+            </div>
+          </div>
+          <button type="button" onclick="quickStartWithDestination('Italy')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-100 hover:bg-oxford-900 text-oxford-900 hover:text-white font-semibold text-xs sm:text-sm transition">
+            Check Italy Eligibility &rarr;
+          </button>
+        </article>
+
+        <!-- Finland Card -->
+        <article data-category="europe" class="dest-card reveal bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">&#127467;&#127470;</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-blue-50 text-blue-700">Family Friendly</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-oxford-900">Finland</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              World's #1 happiest nation offering English-taught degrees, spouse work permits, and direct pathways to Nordic residency.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between"><span>Post-Study Work:</span><strong class="text-oxford-900">2 Years Job Search</strong></div>
+              <div class="flex justify-between"><span>Part-Time Work:</span><strong class="text-oxford-900">30 Hours / Week</strong></div>
+              <div class="flex justify-between"><span>Main Intakes:</span><strong class="text-oxford-900">January &amp; August</strong></div>
+            </div>
+          </div>
+          <button type="button" onclick="quickStartWithDestination('Finland')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-100 hover:bg-oxford-900 text-oxford-900 hover:text-white font-semibold text-xs sm:text-sm transition">
+            Check Finland Eligibility &rarr;
+          </button>
+        </article>
+
+        <!-- Sweden Card -->
+        <article data-category="europe workvisit" class="dest-card reveal reveal-delay-1 bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">&#127480;&#127466;</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-indigo-50 text-indigo-700">Innovation Hub</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-oxford-900">Sweden</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              High-tech European career market with unlimited student work hours, world-class research universities, and family accompaniment.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between"><span>Post-Study Work:</span><strong class="text-oxford-900">12 Months Job Search</strong></div>
+              <div class="flex justify-between"><span>Work Rights:</span><strong class="text-oxford-900">No Official Hour Cap</strong></div>
+              <div class="flex justify-between"><span>Main Intakes:</span><strong class="text-oxford-900">Autumn &amp; Spring</strong></div>
+            </div>
+          </div>
+          <button type="button" onclick="quickStartWithDestination('Sweden')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-100 hover:bg-oxford-900 text-oxford-900 hover:text-white font-semibold text-xs sm:text-sm transition">
+            Check Sweden Eligibility &rarr;
+          </button>
+        </article>
+
+        <!-- Schengen Visit & Work Card -->
+        <article data-category="workvisit" class="dest-card reveal reveal-delay-2 bg-white rounded-3xl border border-slate-200/80 p-6 shadow-sm hover:shadow-luxury hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-4xl">&#127466;&#127482;</span>
+              <span class="text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-amber-50 text-amber-700">Travel &amp; Business</span>
+            </div>
+            <h3 class="font-serif text-xl font-bold text-oxford-900">Schengen Visit &amp; Work</h3>
+            <p class="text-sm text-slate-600 mt-2 leading-relaxed">
+              Complete file preparation for France, Spain, Netherlands, Portugal, and Schengen tourist, family visit, and skilled work visas.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 space-y-2 text-xs text-slate-600">
+              <div class="flex justify-between"><span>Coverage:</span><strong class="text-oxford-900">29 Schengen States</strong></div>
+              <div class="flex justify-between"><span>Processing Avg:</span><strong class="text-oxford-900">15 – 30 Working Days</strong></div>
+              <div class="flex justify-between"><span>Support:</span><strong class="text-oxford-900">Cover Letter &amp; Itinerary</strong></div>
+            </div>
+          </div>
+          <button type="button" onclick="quickStartWithDestination('Schengen / Other Europe')" class="mt-6 w-full py-2.5 rounded-xl bg-slate-100 hover:bg-oxford-900 text-oxford-900 hover:text-white font-semibold text-xs sm:text-sm transition">
+            Check Schengen Eligibility &rarr;
+          </button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       7. COMPREHENSIVE CONSULTANCY SERVICES GRID
+  ========================================================== -->
+  <section id="services" class="py-20 lg:py-24 bg-white border-t border-slate-200/70">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-oxford-900/5 text-oxford-900 font-semibold text-xs uppercase tracking-widest mb-3">
+          Our Expertise
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-oxford-900">
+          Comprehensive Consultancy Services
+        </h2>
+        <p class="mt-3 text-slate-600 text-sm sm:text-base">
+          Every visa case is handled with meticulous documentation, embassy-compliant standards, and 23+ years of practical experience.
+        </p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Service 1 -->
+        <div class="reveal p-7 rounded-3xl bg-alabaster border border-slate-200/80 hover:border-gold-500/60 hover:bg-white hover:shadow-luxury transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-oxford-900 text-gold-400 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-oxford-900">Study Abroad Admissions</h3>
+          <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+            Course selection, offer letter processing, CAS/LoA assistance, and scholarship guidance for UK and European institutions.
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="reveal reveal-delay-1 p-7 rounded-3xl bg-alabaster border border-slate-200/80 hover:border-gold-500/60 hover:bg-white hover:shadow-luxury transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-oxford-900 text-gold-400 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 00.75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 00-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0112 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 01-.673-.38m0 0A2.18 2.18 0 013 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 013.413-.387m7.5 0V5.25A2.25 2.25 0 0013.5 3h-3a2.25 2.25 0 00-2.25 2.25v.894m7.5 0a48.667 48.667 0 00-7.5 0"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-oxford-900">UK &amp; Europe Work Visas</h3>
+          <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+            Strategic guidance for UK Skilled Worker routes, German Opportunity Card, and verified European work permit applications.
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="reveal reveal-delay-2 p-7 rounded-3xl bg-alabaster border border-slate-200/80 hover:border-gold-500/60 hover:bg-white hover:shadow-luxury transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-oxford-900 text-gold-400 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-oxford-900">Visit &amp; Tourist Visas</h3>
+          <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+            UK Standard Visitor, family sponsorships, business conferences, and Schengen tourist visa files built for high approval rates.
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="reveal p-7 rounded-3xl bg-alabaster border border-slate-200/80 hover:border-gold-500/60 hover:bg-white hover:shadow-luxury transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-oxford-900 text-gold-400 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-oxford-900">Visa File &amp; Documentation</h3>
+          <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+            Thorough financial documentation checks, tax/bank statement compliance, affidavit checklists, and embassy appointment scheduling.
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="reveal reveal-delay-1 p-7 rounded-3xl bg-alabaster border border-slate-200/80 hover:border-gold-500/60 hover:bg-white hover:shadow-luxury transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-oxford-900 text-gold-400 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-oxford-900">Interview &amp; SOP Guidance</h3>
+          <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+            Authentic Statement of Purpose (SOP) structuring and realistic mock credibility interviews so you speak with complete confidence.
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="reveal reveal-delay-2 p-7 rounded-3xl bg-alabaster border border-slate-200/80 hover:border-gold-500/60 hover:bg-white hover:shadow-luxury transition-all duration-300 group">
+          <div class="w-12 h-12 rounded-2xl bg-oxford-900 text-gold-400 flex items-center justify-center mb-5 group-hover:scale-105 transition-transform">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 21v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21m0 0h4.5V3.545M12.75 21h7.5V10.75M2.25 21h1.5m18 0h-18M2.25 9l4.5-1.636M18.75 3l-1.5.545m0 6.205l3 1m1.5.5l-1.5-.5M6.75 7.364V3h-3v18m3-13.636l10.5-3.819"/></svg>
+          </div>
+          <h3 class="font-serif text-xl font-bold text-oxford-900">Post-Arrival Support</h3>
+          <p class="text-sm text-slate-600 mt-2.5 leading-relaxed">
+            Pre-departure briefings, student accommodation pointers, airport pickup orientation, and BRP/residence card guidance abroad.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       8. LEGACY & TRUST SECTION (SINCE 2003) + 5.0 ★ REVIEWS
+  ========================================================== -->
+  <section class="py-20 lg:py-24 bg-oxford-900 text-white relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+
+      <!-- Legacy Header & Animated Counters -->
+      <div class="text-center max-w-3xl mx-auto mb-14 reveal">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500/20 text-gold-300 font-semibold text-xs uppercase tracking-widest mb-3">
+          Legacy of Excellence Since 2003
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+          Why Families in Rahim Yar Khan Trust Us
+        </h2>
+        <p class="mt-3 text-slate-300 text-sm sm:text-base">
+          Over two decades of ethical counselling, direct university links, and thousands of successful international journeys.
+        </p>
+      </div>
+
+      <!-- 4 Animated Stat Counters -->
+      <div id="statsSection" class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-16 reveal">
+        <div class="bg-oxford-800/80 border border-white/10 rounded-3xl p-6 text-center">
+          <p class="font-serif text-3xl sm:text-4xl font-bold text-gold-400">
+            <span class="counter" data-target="23">0</span>+
+          </p>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1.5 font-medium">Years Experience (Est. 2003)</p>
+        </div>
+        <div class="bg-oxford-800/80 border border-white/10 rounded-3xl p-6 text-center">
+          <p class="font-serif text-3xl sm:text-4xl font-bold text-white">
+            5.0 <span class="text-gold-400">&#9733;</span>
+          </p>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1.5 font-medium">Verified Google Rating</p>
+        </div>
+        <div class="bg-oxford-800/80 border border-white/10 rounded-3xl p-6 text-center">
+          <p class="font-serif text-3xl sm:text-4xl font-bold text-gold-400">
+            <span class="counter" data-target="100">0</span>%
+          </p>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1.5 font-medium">Transparent Process</p>
+        </div>
+        <div class="bg-oxford-800/80 border border-white/10 rounded-3xl p-6 text-center">
+          <p class="font-serif text-3xl sm:text-4xl font-bold text-white">
+            <span class="counter" data-target="50">0</span>+
+          </p>
+          <p class="text-xs sm:text-sm text-slate-300 mt-1.5 font-medium">UK &amp; Europe Partner Network</p>
+        </div>
+      </div>
+
+      <!-- 5-Star Client Testimonials -->
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Review 1 -->
+        <div class="reveal bg-white/5 border border-white/10 rounded-3xl p-7 flex flex-col justify-between backdrop-blur-sm">
+          <div>
+            <div class="flex items-center gap-1 text-gold-400 text-sm mb-4">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="text-sm text-slate-200 leading-relaxed italic">
+              "I applied for my UK Masters admission through Cambridge International Consultants in Rahim Yar Khan. From university shortlisting to my credibility interview and CAS, everything was handled professionally without any false promises."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-300 font-bold flex items-center justify-center text-sm">HA</div>
+            <div>
+              <p class="font-semibold text-white text-sm">Hamza Ahmad</p>
+              <p class="text-xs text-slate-400">MSc Data Science, UK &bull; Rahim Yar Khan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="reveal reveal-delay-1 bg-white/5 border border-white/10 rounded-3xl p-7 flex flex-col justify-between backdrop-blur-sm">
+          <div>
+            <div class="flex items-center gap-1 text-gold-400 text-sm mb-4">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="text-sm text-slate-200 leading-relaxed italic">
+              "One of the oldest and most reliable offices in Fazeelat Town. They prepared my family's UK Visit Visa file with complete financial clarity and we received our visas smoothly on the first attempt. Highly recommended."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-300 font-bold flex items-center justify-center text-sm">TM</div>
+            <div>
+              <p class="font-semibold text-white text-sm">Tariq Mehmood</p>
+              <p class="text-xs text-slate-400">UK Family Visit Visa &bull; Rahim Yar Khan</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="reveal reveal-delay-2 bg-white/5 border border-white/10 rounded-3xl p-7 flex flex-col justify-between backdrop-blur-sm">
+          <div>
+            <div class="flex items-center gap-1 text-gold-400 text-sm mb-4">
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </div>
+            <p class="text-sm text-slate-200 leading-relaxed italic">
+              "After a 2-year study gap, I was worried about European study options. Their senior advisor guided me step-by-step for Italy with scholarship documentation. Truly grateful for their 23+ years of honest experience."
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-gold-500/20 text-gold-300 font-bold flex items-center justify-center text-sm">AF</div>
+            <div>
+              <p class="font-semibold text-white text-sm">Ayesha Fatima</p>
+              <p class="text-xs text-slate-400">Bachelors in Italy &bull; Sadiqabad / RYK</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =========================================================
+       9. CONTACT, OFFICE LOCATION & FOOTER
+  ========================================================== -->
+  <section id="contact" class="py-20 bg-alabaster">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl border border-slate-200/80 shadow-luxury overflow-hidden reveal">
+        <div class="grid lg:grid-cols-12">
+
+          <!-- Contact Details -->
+          <div class="lg:col-span-6 p-8 sm:p-10 lg:p-12 space-y-6">
+            <div>
+              <span class="inline-block px-3.5 py-1 rounded-full bg-gold-500/15 text-gold-600 font-semibold text-xs uppercase tracking-widest mb-3">
+                Visit Our Office
+              </span>
+              <h2 class="font-serif text-3xl font-bold text-oxford-900">Get in Touch Today</h2>
+              <p class="text-slate-600 text-sm mt-2">
+                Have a question about UK or European study, work, or visit visas? Call us directly or visit our office in Rahim Yar Khan.
+              </p>
+            </div>
+
+            <div class="space-y-4 pt-2">
+              <!-- Phone -->
+              <a href="tel:+923008770506" class="flex items-start gap-4 p-4 rounded-2xl bg-alabaster hover:bg-gold-500/10 border border-slate-200/70 transition">
+                <div class="w-11 h-11 rounded-xl bg-oxford-900 text-gold-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Direct Phone &amp; WhatsApp</p>
+                  <p class="text-base font-bold text-oxford-900 mt-0.5">+92 300 8770506</p>
+                </div>
+              </a>
+
+              <!-- Address -->
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-alabaster border border-slate-200/70">
+                <div class="w-11 h-11 rounded-xl bg-oxford-900 text-gold-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Office Address</p>
+                  <p class="text-sm sm:text-base font-bold text-oxford-900 mt-0.5">Farzand Road, Fazeelat Town, Rahim Yar Khan, Punjab, Pakistan</p>
+                </div>
+              </div>
+
+              <!-- Office Timings -->
+              <div class="flex items-start gap-4 p-4 rounded-2xl bg-alabaster border border-slate-200/70">
+                <div class="w-11 h-11 rounded-xl bg-oxford-900 text-gold-400 flex items-center justify-center shrink-0">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div>
+                  <p class="text-xs font-semibold uppercase tracking-wider text-slate-500">Office Timings</p>
+                  <p class="text-sm sm:text-base font-bold text-oxford-900 mt-0.5">Monday – Saturday: 10:00 AM – 7:00 PM</p>
+                  <p class="text-xs text-slate-500">Sunday: Closed (Online Portal Available 24/7)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Visual Location Card -->
+          <div class="lg:col-span-6 bg-oxford-900 text-white p-8 sm:p-10 lg:p-12 flex flex-col justify-between relative overflow-hidden">
+            <div class="absolute inset-0 opacity-10 pointer-events-none" style="background-image: radial-gradient(#D4AF37 1px, transparent 1px); background-size: 22px 22px;"></div>
+            <div class="relative z-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-gold-300 text-xs font-semibold mb-6">
+                <span>&#9733; 5.0</span> Rated Consultancy in Rahim Yar Khan
+              </div>
+              <h3 class="font-serif text-2xl sm:text-3xl font-bold text-white leading-snug">
+                Cambridge International Consultants (Since 2003)
+              </h3>
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Conveniently located at Farzand Road, Fazeelat Town, Rahim Yar Khan. Walk-in applicants are welcome during office hours, or book an appointment online for priority seating.
+              </p>
+            </div>
+
+            <div class="relative z-10 mt-8 pt-6 border-t border-white/15 flex flex-col sm:flex-row gap-3">
+              <a href="https://wa.me/923008770506?text=Assalam-o-Alaikum%20Cambridge%20International%20Consultants%2C%20I%20would%20like%20to%20inquire%20about%20a%20visa%20consultation." target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition">
+                Chat on WhatsApp
+              </a>
+              <a href="https://www.google.com/maps/search/?api=1&query=Farzand+Road+Fazeelat+Town+Rahim+Yar+Khan" target="_blank" rel="noopener noreferrer" class="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-semibold text-sm transition">
+                Open in Google Maps &rarr;
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dark Oxford Navy Footer -->
+  <footer class="bg-oxford-950 text-slate-400 border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="text-center md:text-left">
+          <p class="font-serif text-lg font-bold text-white">Cambridge International Consultants <span class="text-gold-400">(Since 2003)</span></p>
+          <p class="text-xs text-slate-400 mt-1">Study, Visit, Work &amp; Immigration Consultancy &bull; Farzand Road, Fazeelat Town, Rahim Yar Khan</p>
+        </div>
+        <div class="flex flex-wrap items-center justify-center gap-5 text-xs font-medium">
+          <a href="#services" class="hover:text-gold-300 transition">Services</a>
+          <a href="#destinations" class="hover:text-gold-300 transition">Destinations</a>
+          <a href="#eligibility" class="hover:text-gold-300 transition">Eligibility Check</a>
+          <a href="#booking" class="hover:text-gold-300 transition">Book Consultation</a>
+          <a href="tel:+923008770506" class="text-gold-400 hover:text-gold-300 transition">+92 300 8770506</a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
+        <p>&copy; 2003–2026 Cambridge International Consultants. All rights reserved.</p>
+        <p>Serving Rahim Yar Khan &amp; Pakistan for 23+ Years.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================
+       10. FLOATING WHATSAPP BUTTON
+  ========================================================== -->
+  <a href="https://wa.me/923008770506?text=Assalam-o-Alaikum%20Cambridge%20International%20Consultants%2C%20I%20visited%20your%20website%20and%20need%20visa%20guidance." target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 z-40 group flex items-center gap-2.5 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-3.5 rounded-full shadow-2xl transition-all duration-300 hover:scale-105">
+    <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/></svg>
+    <span class="hidden sm:inline text-sm font-semibold pr-1">WhatsApp Us</span>
+  </a>
+
+  <!-- =========================================================
+       11. BOOKING CONFIRMATION TICKET MODAL
+  ========================================================== -->
+  <div id="ticketModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-oxford-950/75 backdrop-blur-sm">
+    <div class="bg-white rounded-3xl max-w-md w-full overflow-hidden shadow-2xl border border-gold-500/30 step-active">
+      <!-- Ticket Header -->
+      <div class="bg-oxford-900 px-6 py-6 text-center text-white relative">
+        <button type="button" onclick="closeTicketModal()" aria-label="Close modal" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white transition">
+          &times;
+        </button>
+        <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-400/30 flex items-center justify-center mx-auto mb-3 text-xl">
+          &#10003;
+        </div>
+        <p class="text-[11px] uppercase tracking-widest text-gold-400 font-semibold">Appointment Reserved</p>
+        <h3 class="font-serif text-2xl font-bold mt-1">Consultation Ticket</h3>
+      </div>
+
+      <!-- Ticket Body -->
+      <div class="p-6 space-y-4">
+        <div class="flex items-center justify-between bg-alabaster border border-dashed border-gold-500/60 rounded-2xl px-4 py-3">
+          <div>
+            <p class="text-[11px] uppercase tracking-wider text-slate-500 font-semibold">Booking Reference ID</p>
+            <p id="ticketRefId" class="font-mono text-base font-bold text-oxford-900">CIC-2026-0000</p>
+          </div>
+          <button type="button" onclick="copyBookingRef()" id="copyRefBtn" class="px-3 py-1.5 rounded-lg bg-white border border-slate-200 text-xs font-semibold text-oxford-900 hover:bg-slate-100 transition">
+            Copy ID
+          </button>
+        </div>
+
+        <div class="space-y-2.5 text-sm">
+          <div class="flex justify-between py-1.5 border-b border-slate-100">
+            <span class="text-slate-500">Applicant</span>
+            <strong id="tkName" class="text-oxford-900"></strong>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-100">
+            <span class="text-slate-500">Service</span>
+            <strong id="tkService" class="text-oxford-900 text-right"></strong>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-100">
+            <span class="text-slate-500">Mode</span>
+            <strong id="tkMode" class="text-oxford-900"></strong>
+          </div>
+          <div class="flex justify-between py-1.5 border-b border-slate-100">
+            <span class="text-slate-500">Date &amp; Time</span>
+            <strong id="tkDateTime" class="text-oxford-900"></strong>
+          </div>
+          <div class="flex justify-between py-1.5">
+            <span class="text-slate-500">Location</span>
+            <strong class="text-oxford-900 text-right">Fazeelat Town, RYK</strong>
+          </div>
+        </div>
+
+        <div class="pt-2 space-y-2.5">
+          <a id="ticketWaBtn" href="#" target="_blank" rel="noopener noreferrer" class="w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm shadow-md transition">
+            Confirm Directly on WhatsApp
+          </a>
+          <button type="button" onclick="closeTicketModal()" class="w-full py-2.5 rounded-xl text-xs font-semibold text-slate-500 hover:text-oxford-900 transition">
+            Close Window
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       JAVASCRIPT: WIZARD LOGIC, BOOKING PORTAL, FILTERS & ANIMATIONS
+  ========================================================== -->
+  <script>
+    // =========================================================
+    // 1. GLOBAL STATE FOR ELIGIBILITY WIZARD & BOOKING
+    // =========================================================
+    const WHATSAPP_NUMBER = '923008770506';
+
+    const wizardState = {
+      currentStep: 1,
+      totalSteps: 4,
+      visaType: '',
+      destination: '',
+      qualification: '',
+      grades: '',
+      english: '',
+      gap: '',
+      name: '',
+      phone: '',
+      city: 'Rahim Yar Khan'
+    };
+
+    const bookingState = {
+      mode: 'In-Person Office Visit',
+      timeSlot: '12:00 PM',
+      lastRefId: ''
+    };
+
+    const stepMeta = {
+      1: { label: 'Step 1 of 4', title: 'Select Your Visa Category', percent: '25%' },
+      2: { label: 'Step 2 of 4', title: 'Choose Preferred Destination', percent: '50%' },
+      3: { label: 'Step 3 of 4', title: 'Academic & Profile Details', percent: '75%' },
+      4: { label: 'Step 4 of 4', title: 'Your Contact Information', percent: '100%' }
+    };
+
+    // =========================================================
+    // 2. NAVIGATION & MOBILE MENU
+    // =========================================================
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const menuIconOpen = document.getElementById('menuIconOpen');
+    const menuIconClose = document.getElementById('menuIconClose');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      menuIconOpen.classList.toggle('hidden');
+      menuIconClose.classList.toggle('hidden');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        menuIconOpen.classList.remove('hidden');
+        menuIconClose.classList.add('hidden');
+      });
+    });
+
+    // Subtle navbar shadow on scroll
+    window.addEventListener('scroll', () => {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 20) {
+        navbar.classList.add('shadow-md');
+      } else {
+        navbar.classList.remove('shadow-md');
+      }
+    });
+
+    // =========================================================
+    // 3. ELIGIBILITY ASSESSMENT WIZARD FUNCTIONS
+    // =========================================================
+    function showWizardError(msg) {
+      const errBox = document.getElementById('wizardError');
+      document.getElementById('wizardErrorText').textContent = msg;
+      errBox.classList.remove('hidden');
+    }
+
+    function hideWizardError() {
+      document.getElementById('wizardError').classList.add('hidden');
+    }
+
+    function selectOption(btnEl, group, value) {
+      hideWizardError();
+      wizardState[group] = value;
+
+      document.querySelectorAll(`button[data-group="${group}"]`).forEach(card => {
+        card.classList.remove('selected');
+      });
+      btnEl.classList.add('selected');
+    }
+
+    function updateWizardUI() {
+      const step = wizardState.currentStep;
+
+      // Toggle step panels
+      for (let i = 1; i <= wizardState.totalSteps; i++) {
+        const panel = document.getElementById(`step-${i}`);
+        const dot = document.getElementById(`dot-${i}`);
+        if (i === step) {
+          panel.classList.remove('hidden');
+          panel.classList.add('step-active');
+        } else {
+          panel.classList.add('hidden');
+          panel.classList.remove('step-active');
+        }
+        if (i <= step) {
+          dot.classList.add('text-gold-300', 'font-semibold');
+          dot.classList.remove('text-slate-400');
+        } else {
+          dot.classList.remove('text-gold-300', 'font-semibold');
+          dot.classList.add('text-slate-400');
+        }
+      }
+
+      // Header progress updates
+      document.getElementById('stepLabel').textContent = stepMeta[step].label;
+      document.getElementById('stepTitle').textContent = stepMeta[step].title;
+      document.getElementById('progressPercentText').textContent = stepMeta[step].percent;
+      document.getElementById('wizardProgressBar').style.width = stepMeta[step].percent;
+
+      // Prev / Next Buttons
+      const prevBtn = document.getElementById('prevStepBtn');
+      const nextBtnSpan = document.querySelector('#nextStepBtn span');
+      if (step === 1) {
+        prevBtn.classList.add('invisible');
+      } else {
+        prevBtn.classList.remove('invisible');
+      }
+      nextBtnSpan.textContent = step === wizardState.totalSteps ? 'Generate Eligibility Report' : 'Continue';
+    }
+
+    function validateCurrentStep() {
+      hideWizardError();
+      const s = wizardState.currentStep;
+
+      if (s === 1 && !wizardState.visaType) {
+        showWizardError('Please select a Visa Category to continue.');
+        return false;
+      }
+      if (s === 2 && !wizardState.destination) {
+        showWizardError('Please select your Preferred Destination.');
+        return false;
+      }
+      if (s === 3) {
+        const qual = document.getElementById('elQualification').value.trim();
+        const grades = document.getElementById('elGrades').value.trim();
+        const eng = document.getElementById('elEnglish').value.trim();
+        const gap = document.getElementById('elGap').value.trim();
+        if (!qual || !grades || !eng || !gap) {
+          showWizardError('Please complete all academic & profile fields.');
+          return false;
+        }
+        wizardState.qualification = qual;
+        wizardState.grades = grades;
+        wizardState.english = eng;
+        wizardState.gap = gap;
+      }
+      if (s === 4) {
+        const name = document.getElementById('elName').value.trim();
+        const phone = document.getElementById('elPhone').value.trim();
+        const city = document.getElementById('elCity').value.trim();
+        if (!name || !phone || !city) {
+          showWizardError('Please enter your Full Name, WhatsApp Number, and City.');
+          return false;
+        }
+        wizardState.name = name;
+        wizardState.phone = phone;
+        wizardState.city = city;
+      }
+      return true;
+    }
+
+    function changeStep(direction) {
+      if (direction === 1) {
+        if (!validateCurrentStep()) return;
+        if (wizardState.currentStep === wizardState.totalSteps) {
+          computeAndShowReport();
+          return;
+        }
+      }
+      wizardState.currentStep += direction;
+      updateWizardUI();
+    }
+
+    // Dynamic Score & Tailored Recommendation Engine
+    function computeAndShowReport() {
+      let score = 76;
+
+      // Qualification boost
+      if (wizardState.qualification.includes('Bachelors') || wizardState.qualification.includes('Masters')) score += 7;
+      else if (wizardState.qualification.includes('Intermediate')) score += 5;
+      else score += 3;
+
+      // English test boost
+      if (wizardState.english.includes('IELTS') || wizardState.english.includes('PTE')) score += 8;
+      else if (wizardState.english.includes('MOI')) score += 5;
+      else score += 2;
+
+      // Gap adjustment
+      if (wizardState.gap.includes('No Gap')) score += 5;
+      else if (wizardState.gap.includes('1 - 2')) score += 3;
+      else if (wizardState.gap.includes('3 - 5')) score += 1;
+
+      // Cap score realistically between 80 and 96
+      score = Math.min(96, Math.max(80, score));
+
+      // Hide steps & controls, show result
+      for (let i = 1; i <= 4; i++) {
+        document.getElementById(`step-${i}`).classList.add('hidden');
+      }
+      document.getElementById('wizardControls').classList.add('hidden');
+      document.getElementById('wizardResult').classList.remove('hidden');
+
+      // Update header
+      document.getElementById('stepLabel').textContent = 'Assessment Complete';
+      document.getElementById('stepTitle').textContent = `Personalized Report for ${wizardState.name}`;
+
+      // Animate Circular Score Meter
+      const circle = document.getElementById('scoreRing');
+      const circumference = 2 * Math.PI * 52; // 326.73
+      const offset = circumference - (score / 100) * circumference;
+      setTimeout(() => {
+        circle.style.strokeDashoffset = offset;
+      }, 100);
+
+      // Animate score number
+      let currentNum = 0;
+      const scoreTextEl = document.getElementById('scoreValueText');
+      const timer = setInterval(() => {
+        currentNum += 2;
+        if (currentNum >= score) {
+          currentNum = score;
+          clearInterval(timer);
+        }
+        scoreTextEl.textContent = `${currentNum}%`;
+      }, 20);
+
+      document.getElementById('scoreBadge').textContent = score >= 90 ? 'Excellent Profile' : 'Strong Eligibility';
+      document.getElementById('reportApplicantSummary').textContent =
+        `${wizardState.visaType} • ${wizardState.destination} • ${wizardState.qualification} (${wizardState.grades})`;
+
+      document.getElementById('reportHeadline').textContent =
+        `Strong Pathway Identified for ${wizardState.destination} (${wizardState.visaType})`;
+
+      // Build tailored recommendation bullets
+      const recs = [];
+
+      if (wizardState.visaType === 'Study Visa') {
+        if (wizardState.destination === 'United Kingdom') {
+          recs.push({
+            title: 'Target Upcoming UK Intake (Jan / Sep)',
+            desc: 'Your academic profile qualifies for direct shortlisting across UK universities with 2-year Post-Study Work (Graduate Route) eligibility.'
+          });
+        } else {
+          recs.push({
+            title: `${wizardState.destination} Public & Scholarship Pathways`,
+            desc: `You can target affordable European programs in ${wizardState.destination} with strong tuition waivers or regional scholarship opportunities.`
+          });
+        }
+
+        if (wizardState.english === 'Not Taken Yet') {
+          recs.push({
+            title: 'English Language / MOI Guidance',
+            desc: 'You can either prepare for IELTS/PTE or explore selected UK/European universities accepting a Medium of Instruction (MOI) letter.'
+          });
+        } else {
+          recs.push({
+            title: `${wizardState.english} Advantage`,
+            desc: 'Your English proficiency status strengthens your offer letter timeline and scholarship competitiveness.'
+          });
+        }
+      } else if (wizardState.visaType === 'Work Visa') {
+        recs.push({
+          title: `${wizardState.destination} Skilled Employment Strategy`,
+          desc: 'Our advisors will review your CV, qualification equivalency, and sponsorship or Opportunity Card eligibility.'
+        });
+        recs.push({
+          title: 'Documentation & Embassy Compliance',
+          desc: 'We verify experience letters, degree attestations, and financial readiness before submission.'
+        });
+      } else {
+        recs.push({
+          title: `Strong ${wizardState.visaType} File Preparation`,
+          desc: `For ${wizardState.destination}, embassy approval depends heavily on home ties, travel itinerary, and clean financial statements.`
+        });
+        recs.push({
+          title: 'Personalized Cover Letter & Checklist',
+          desc: 'Our Rahim Yar Khan office prepares complete embassy-standard documentation tailored to your profile.'
+        });
+      }
+
+      recs.push({
+        title: 'Recommended Next Step',
+        desc: 'Share this report directly with our Senior Consultant on WhatsApp or visit our Fazeelat Town, Rahim Yar Khan office for a free document check.'
+      });
+
+      const recContainer = document.getElementById('reportRecommendations');
+      recContainer.innerHTML = recs.map(r => `
+        <div class="p-4 rounded-2xl bg-alabaster border border-slate-200/80 flex items-start gap-3">
+          <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-600 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">&#10003;</span>
+          <div>
+            <h4 class="font-bold text-oxford-900 text-sm">${r.title}</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-0.5 leading-relaxed">${r.desc}</p>
+          </div>
+        </div>
+      `).join('');
+
+      // Pre-fill WhatsApp Deep Link
+      const waText =
+        `Assalam-o-Alaikum Cambridge International Consultants,\n\n` +
+        `I just completed my Online Visa Eligibility Assessment:\n` +
+        `• Name: ${wizardState.name}\n` +
+        `• City: ${wizardState.city}\n` +
+        `• Phone: ${wizardState.phone}\n` +
+        `• Visa Category: ${wizardState.visaType}\n` +
+        `• Destination: ${wizardState.destination}\n` +
+        `• Qualification: ${wizardState.qualification} (${wizardState.grades})\n` +
+        `• English Test: ${wizardState.english}\n` +
+        `• Gap: ${wizardState.gap}\n` +
+        `• Computed Profile Score: ${score}%\n\n` +
+        `Please guide me on the next steps.`;
+
+      document.getElementById('sendReportWaBtn').href =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waText)}`;
+    }
+
+    function resetWizard() {
+      wizardState.currentStep = 1;
+      wizardState.visaType = '';
+      wizardState.destination = '';
+      document.querySelectorAll('.option-card').forEach(c => c.classList.remove('selected'));
+      document.getElementById('wizardResult').classList.add('hidden');
+      document.getElementById('wizardControls').classList.remove('hidden');
+      document.getElementById('scoreRing').style.strokeDashoffset = 326.73;
+      updateWizardUI();
+    }
+
+    // Quick-Start helpers from Hero & Destination Cards
+    function quickStartAssessment(visaType) {
+      resetWizard();
+      const targetBtn = document.querySelector(`button[data-group="visaType"][data-value="${visaType}"]`);
+      if (targetBtn) selectOption(targetBtn, 'visaType', visaType);
+      document.getElementById('eligibility').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function quickStartWithDestination(dest) {
+      resetWizard();
+      const studyBtn = document.querySelector(`button[data-group="visaType"][data-value="Study Visa"]`);
+      if (studyBtn) selectOption(studyBtn, 'visaType', 'Study Visa');
+      const destBtn = document.querySelector(`button[data-group="destination"][data-value="${dest}"]`);
+      if (destBtn) selectOption(destBtn, 'destination', dest);
+      wizardState.currentStep = 2;
+      updateWizardUI();
+      document.getElementById('eligibility').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function transferToBooking() {
+      if (wizardState.name) document.getElementById('bkName').value = wizardState.name;
+      if (wizardState.phone) document.getElementById('bkPhone').value = wizardState.phone;
+      document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // =========================================================
+    // 4. CONSULTATION BOOKING PORTAL LOGIC
+    // =========================================================
+    // Set default date to tomorrow
+    (function initBookingDate() {
+      const dateInput = document.getElementById('bkDate');
+      const today = new Date();
+      const tomorrow = new Date(today);
+      tomorrow.setDate(today.getDate() + 1);
+      // If Sunday, move to Monday
+      if (tomorrow.getDay() === 0) tomorrow.setDate(tomorrow.getDate() + 1);
+
+      const formatISO = d => d.toISOString().split('T')[0];
+      dateInput.min = formatISO(today);
+      dateInput.value = formatISO(tomorrow);
+    })();
+
+    function selectBookingMode(btn, mode) {
+      bookingState.mode = mode;
+      document.querySelectorAll('.mode-btn').forEach(b => {
+        b.classList.remove('selected', 'bg-oxford-900', 'text-white', 'border-oxford-900');
+        b.classList.add('bg-white', 'text-slate-700', 'border-slate-200');
+      });
+      btn.classList.add('selected', 'bg-oxford-900', 'text-white', 'border-oxford-900');
+      btn.classList.remove('bg-white', 'text-slate-700', 'border-slate-200');
+    }
+
+    function selectTimeSlot(btn, slot) {
+      bookingState.timeSlot = slot;
+      document.querySelectorAll('.slot-pill').forEach(p => p.classList.remove('selected'));
+      btn.classList.add('selected');
+    }
+
+    function handleBookingSubmit(e) {
+      e.preventDefault();
+      const errEl = document.getElementById('bookingError');
+      errEl.classList.add('hidden');
+
+      const name = document.getElementById('bkName').value.trim();
+      const phone = document.getElementById('bkPhone').value.trim();
+      const dateVal = document.getElementById('bkDate').value;
+      const service = document.getElementById('bkService').value;
+
+      if (!name || !phone || !dateVal || !bookingState.timeSlot) {
+        errEl.textContent = 'Please complete all required fields and select a time slot.';
+        errEl.classList.remove('hidden');
+        return;
+      }
+
+      // Generate Unique Booking Ref ID
+      const randNum = Math.floor(1000 + Math.random() * 9000);
+      const refId = `CIC-2026-${randNum}`;
+      bookingState.lastRefId = refId;
+
+      // Format Date nicely
+      const formattedDate = new Date(dateVal + 'T00:00:00').toLocaleDateString('en-GB', {
+        weekday: 'short', day: 'numeric', month: 'short', year: 'numeric'
+      });
+
+      // Populate Modal
+      document.getElementById('ticketRefId').textContent = refId;
+      document.getElementById('tkName').textContent = name;
+      document.getElementById('tkService').textContent = service;
+      document.getElementById('tkMode').textContent = bookingState.mode;
+      document.getElementById('tkDateTime').textContent = `${formattedDate} • ${bookingState.timeSlot}`;
+
+      const waBookingMsg =
+        `Assalam-o-Alaikum Cambridge International Consultants,\n\n` +
+        `I have booked a Visa Consultation via your website:\n` +
+        `• Reference ID: ${refId}\n` +
+        `• Name: ${name}\n` +
+        `• Phone: ${phone}\n` +
+        `• Service: ${service}\n` +
+        `• Mode: ${bookingState.mode}\n` +
+        `• Date & Time: ${formattedDate} at ${bookingState.timeSlot}\n\n` +
+        `Please confirm my appointment slot.`;
+
+      document.getElementById('ticketWaBtn').href =
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(waBookingMsg)}`;
+
+      // Show Modal
+      const modal = document.getElementById('ticketModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeTicketModal() {
+      const modal = document.getElementById('ticketModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function copyBookingRef() {
+      const refText = bookingState.lastRefId;
+      const tempInput = document.createElement('input');
+      tempInput.value = refText;
+      document.body.appendChild(tempInput);
+      tempInput.select();
+      try {
+        document.execCommand('copy');
+        const btn = document.getElementById('copyRefBtn');
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = 'Copy ID'; }, 2000);
+      } catch (err) {
+        // Fallback silently
+      }
+      document.body.removeChild(tempInput);
+    }
+
+    // Close modal on backdrop click
+    document.getElementById('ticketModal').addEventListener('click', (e) => {
+      if (e.target.id === 'ticketModal') closeTicketModal();
+    });
+
+    // =========================================================
+    // 5. DESTINATION FILTER TABS
+    // =========================================================
+    function filterDestinations(category, activeBtn) {
+      document.querySelectorAll('.dest-tab').forEach(btn => {
+        btn.classList.remove('bg-oxford-900', 'text-white');
+        btn.classList.add('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+      });
+      activeBtn.classList.add('bg-oxford-900', 'text-white');
+      activeBtn.classList.remove('bg-white', 'border', 'border-slate-200', 'text-slate-700');
+
+      document.querySelectorAll('.dest-card').forEach(card => {
+        const cats = card.getAttribute('data-category');
+        if (category === 'all' || cats.includes(category)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // =========================================================
+    // 6. INTERSECTION OBSERVER: SCROLL REVEAL & STAT COUNTERS
+    // =========================================================
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Animated Number Counters
+    let countersStarted = false;
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !countersStarted) {
+          countersStarted = true;
+          document.querySelectorAll('.counter').forEach(counter => {
+            const target = parseInt(counter.getAttribute('data-target'), 10);
+            let current = 0;
+            const step = Math.max(1, Math.ceil(target / 40));
+            const interval = setInterval(() => {
+              current += step;
+              if (current >= target) {
+                counter.textContent = target;
+                clearInterval(interval);
+              } else {
+                counter.textContent = current;
+              }
+            }, 30);
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    const statsSection = document.getElementById('statsSection');
+    if (statsSection) statsObserver.observe(statsSection);
+  </script>
+</body>
+</html>
